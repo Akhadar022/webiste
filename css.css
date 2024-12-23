@@ -1,0 +1,183 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #E0E0E0; /* Light grey text for readability */
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #1F1F1F; /* Dark grey background */
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #A5D6A7; /* Light green for links */
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #81C784; /* Slightly brighter green on hover */
+}
+
+/* Hero Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 50px;
+    background-image: url('https://www.transparenttextures.com/patterns/diagonal-stripes.png');
+    background-color: #1C1C1C;
+    background-blend-mode: darken;
+    background-size: cover;
+}
+
+.header-content {
+    max-width: 50%;
+    padding: 20px;
+    z-index: 2;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    color: #A5D6A7; /* Light green */
+}
+
+.header-content .tagline {
+    font-size: 1.5rem;
+    color: #90A4AE; /* Light blue-grey for subtitle */
+    margin-bottom: 10px;
+}
+
+.header-content a {
+    color: #FFEB3B; /* Yellow for email and LinkedIn */
+    font-weight: bold;
+}
+
+.header-content a:hover {
+    color: #FFD54F; /* Lighter yellow on hover */
+}
+
+.header-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #A5D6A7; /* Green border around the image */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Section Styles */
+.section-spacing {
+    padding: 60px 30px;
+    margin-top: 80px;
+    background-color: #212121; /* Slightly lighter than body */
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    color: #A5D6A7;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #B0BEC5; /* Lighter grey for body text */
+    text-align: center;
+    line-height: 1.6;
+}
+
+.project-card {
+    background-color: #2C2C2C; /* Darker grey card background */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.project-card h3 {
+    color: #FFEB3B; /* Yellow for project titles */
+    font-size: 1.5rem;
+}
+
+.project-card p {
+    color: #B0BEC5;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Hover Effects */
+.project-card:hover {
+    background-color: #3A3A3A;
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+header, .section-spacing {
+    border-radius: 15px;
+}
+
+/* Footer (if applicable) */
+footer {
+    background-color: #1F1F1F;
+    padding: 20px 0;
+    text-align: center;
+    color: #B0BEC5;
+}
+
+footer a {
+    color: #FFEB3B;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #FFD54F;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 20px;
+    }
+
+    .header-content {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .header-image img {
+        width: 250px;
+        margin-top: 20px;
+    }
+
+    .section-spacing {
+        padding: 40px 20px;
+    }
+}
